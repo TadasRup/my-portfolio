@@ -1,5 +1,8 @@
 import "./hero.scss";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { MotionConfigContext, motion } from "framer-motion";
+
+
 
 const textVariants = {
   initial: {
@@ -28,16 +31,18 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-10%",
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
-      duration: 20,
+      duration: 10,
     },
   },
 };
 
+
 const Hero = () => {
+    
   return (
     <div className="hero">
       <div className="wrapper">
@@ -71,10 +76,10 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        TADAS RUPSLAUKIS
+        LITHUANIAN
       </motion.div>
       <div className="imageContainer">
-        <img src="/myphoto2.png" alt="" />
+        <img src="/js.png" alt="" />
       </div>
     </div>
   );

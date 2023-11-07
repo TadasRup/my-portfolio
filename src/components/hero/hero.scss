@@ -3,13 +3,16 @@
 .hero {
   height: calc(100vh - 100px);
   overflow: hidden;
-  background: linear-gradient(180deg, #0c0c1d, #111132);
+  background: linear-gradient(180deg,#0c0c1d, #111132);
   position: relative;
+  
+  
 
   .wrapper {
     max-width: 1366px;
     height: 100%;
     margin: auto;
+    pointer-events: none;
 
     .textContainer {
       width: 50%;
@@ -18,6 +21,13 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
+      pointer-events: none;
+      text-align: center;
+      margin-left: 100px;
+      margin-top: 30px;
+      
+      
+      
 
       @include mobile {
         height: 50%;
@@ -31,10 +41,12 @@
         font-size: 30px;
         color: rebeccapurple;
         letter-spacing: 10px;
+        pointer-events: none;
       }
 
       h1 {
         font-size: 88px;
+        pointer-events: none;
 
         @include mobile {
           font-size: 36px;
@@ -51,6 +63,7 @@
           margin-right: 20px;
           cursor: pointer;
           font-weight: 300;
+          pointer-events: none;
         }
       }
 
@@ -65,6 +78,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    
 
     @include mobile {
       height: 50%;
@@ -80,10 +94,11 @@
     }
   }
 
+
   .slidingTextContainer {
     position: absolute;
-    font-size: 50vh;
-    bottom: -120px;
+    font-size: 40vh;
+    bottom: -96px;
     white-space: nowrap;
     color: #ffffff09;
     width: 50%;
