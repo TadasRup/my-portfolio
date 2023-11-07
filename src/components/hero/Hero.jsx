@@ -31,7 +31,7 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-10%",
+    x: "-40%",
     transition: {
       repeat: Infinity,
       repeatType:"mirror",
@@ -76,7 +76,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        LITHUANIAN
+        LITHUANIA
       </motion.div>
       <div className="imageContainer">
         <img src="/js.png" alt="" />
